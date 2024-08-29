@@ -1,0 +1,9 @@
+[
+    { "day": "Seg", "value": 35.75 },
+    { "day": "Ter", "value": 42.50 },
+    { "day": "Qua", "value": 60.30 },
+    { "day": "Qui", "value": 20.80 },
+    { "day": "Sex", "value": 70.00 },
+    { "day": "Sáb", "value": 15.20 },
+    { "day": "Dom", "value": 50.60 }
+]

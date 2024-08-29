@@ -1,0 +1,35 @@
+{
+  "totalBalance": 1500.48,
+  "totalAmount": 451.12,
+  "percentageChange": 3.4,
+  "expenses": [
+    {
+      "day": "mon",
+      "amount": 52.45
+    },
+    {
+      "day": "tue",
+      "amount": 92.91
+    },
+    {
+      "day": "wed",
+      "amount": 47.36
+    },
+    {
+      "day": "thu",
+      "amount": 11.07
+    },
+    {
+      "day": "fri",
+      "amount": 73.39
+    },
+    {
+      "day": "sat",
+      "amount": 22.28
+    },
+    {
+      "day": "sun",
+      "amount": 18.48
+    }
+  ]
+}
