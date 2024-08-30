@@ -1,134 +1,68 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-}
-
+/* Estilos gerais da página */
 body {
+  background-color: #F5F5F5;
+  margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-}
-
-/* Header */
-header {
-  background-color: #333;
+/* Estilos da barra de navegação */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-  padding: 20px 0;
+  z-index: 100; /* Garante que a barra de navegação fique acima de outros elementos */
 }
 
-header h1 {
-  float: left;
-  margin-left: 20px;
+.header-content {
+  text-align: center;
 }
 
-header nav {
-  float: right;
-  margin-right: 20px;
-}
-
-header ul {
-  list-style: none;
-}
-
-header ul li {
-  display: inline;
-  margin-left: 20px;
-}
-
-header ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header ul li a:hover {
-  text-decoration: underline;
-}
-
-/*Estilização da barra de navegação*/
 .navbar {
-  background-color: #003366; 
-  padding: 10px 20px;
+  background-color: #333;
+  padding: 10px 0;
 }
 
 .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
+  text-align: center;
 }
 
 .nav-links li {
-  margin: 0 15px;
+  display: inline;
 }
 
 .nav-links a {
+  color: #F5F5F5;
   text-decoration: none;
-  color: #FFA500; 
-  font-size: 18px;
-  transition: color 0.3s;
+  padding: 14px 20px;
+  display: inline-block;
 }
 
 .nav-links a:hover {
-  color: #FFD700; 
+  background-color: #575757;
 }
 
-/* Estilização do header*/
-.header {
-  background-color: #FFA500;
-  color: #ffff; 
+/* Ajusta o conteúdo para não ficar escondido sob a barra de navegação */
+main {
+  padding-top: 80px; 
+}
+
+/* Estilização do footer */
+footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px;
   position: relative;
-  z-index: 2; 
+  bottom: 0;
+  width: 100%;
 }
 
-.header-content {
-  max-width: 1200px;
-  margin: 0 auto; 
-}
-
-.header h1 {
+footer p {
   margin: 0;
-  font-size: 1.8em; 
-  font-weight: 300; 
-}
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-  .header h1 {
-      font-size: 1.5em; 
-  }
-
-  .nav-links {
-      padding: 0;
-  }
-
-  .nav-links li {
-      margin: 0 10px; 
-  }
-
-  .nav-links a {
-      font-size: 14px; 
-  }
-}
-
-/* Estilos para telas muito pequenas */
-@media (max-width: 480px) {
-  .header h1 {
-      font-size: 1.2em; 
-  }
-
-  .nav-links a {
-      font-size: 12px; 
-  }
 }
