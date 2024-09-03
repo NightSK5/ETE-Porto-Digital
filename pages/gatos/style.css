@@ -1,217 +1,208 @@
-
-
 /* Estilos gerais */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+/* Estilos do cabeçalho */
+.header {
+  background-color: #201E43;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
 
-  
-  /* Estilos do cabeçalho */
-  .header {
-    background-color: #201E43;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 4;
+  display: flex;
+  flex-direction: column;
+}
 
-    display: flex;
-    flex-direction: column;
-  }
+.navbar {
+  display: flex;
+  justify-content: center;
+}
 
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .header-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav-links li {
-    margin: 0 10px;
-  }
-  
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #ddd;
-  }
-  
-  /* Estilos das seções */
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  main{
-    margin-top: 20px;
-  }
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
 
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 100px;
-    scroll-margin-top: 80px; /* Compensar a altura do cabeçalho fixo */
-  }
+.nav-links li {
+  margin: 0 10px;
+}
 
-  .started{
-    padding-top: 80px;
-  }
-  
-  .get-started {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 100%;
-    background-color: #bdbdbd;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-    font-family: 'Times New Roman', Times, serif;   
-  }
+.nav-links a:hover {
+  color: #ddd;
+}
 
-  .get-started h1 {
-    padding: 0px;
-    font-size: 30px;
-    margin: 0px;
+/* Estilos das seções */
+main {
+  margin-top: 20px;
+}
 
-  }
-  
-  .get-started article {
-    text-align: center;
-    padding: 10px;
-    max-width: 80%;
-  }
-  
-  .desc-info {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .carousel {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .carousel img {
-    height: 400px;
-    object-fit: cover;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  scroll-margin-top: 80px; /* Compensar a altura do cabeçalho fixo */
+}
 
-    border-radius: 20px;
-  }
+.started{
+  padding-top: 80px;
+}
 
-  /* estilos dos cuidados */
+.get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  background-color: #bdbdbd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-  .cuidados {
-    display: flex;
-    flex-direction: column;
-  }
+  font-family: 'Times New Roman', Times, serif;   
+}
 
-  .cuidados .title{
-    font-size: 64px;
-    color: #201E43;
+.get-started h1 {
+  padding: 0px;
+  font-size: 30px;
+  margin: 0px;
 
-    margin-bottom: 40px;
-  }
+}
 
-  .cuidados .importantes {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 80px;
-  }
+.get-started article {
+  text-align: center;
+  padding: 10px;
+  max-width: 80%;
+}
 
-  .cuidados .resumos {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
+.desc-info {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .cuidados ul{
-    align-self: center;
+.carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-    font-size: 20px;
+.carousel img {
+  height: 400px;
+  object-fit: cover;
 
-    list-style: square;
-  }
+  border-radius: 20px;
+}
 
+/* estilos dos cuidados */
 
-  /* estilo da ração */
-  
-  .racao {
-    display: flex;
-    flex-direction: column;
-  }
+.cuidados {
+  display: flex;
+  flex-direction: column;
+}
 
-  .racao h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
+.cuidados .title{
+  font-size: 64px;
+  color: #201E43;
 
-  .racao p {
-    max-width: 90%;
-    align-self: flex-end;
-    font-size: 20px;
-  }
+  margin-bottom: 40px;
+}
 
-  .racao .como-sao {
-    margin-top: 20px;
-  }
+.cuidados .importantes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
 
-  .racao .racao-link {
-    font-size: 16px;
-    align-self: flex-start;
-  }
+.cuidados .resumos {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
-  /* final agradecimentos */
+.cuidados ul{
+  align-self: center;
 
-  .final .end-paw{
-    align-self: center;
-    max-width: 10%;
+  font-size: 20px;
 
-    margin-top: -80px;
-    margin-bottom: 20px;
-  }
+  list-style: square;
+}
 
-  .final {
-    display: flex;
-    flex-direction: column;
+/* estilo da ração */
 
-    align-items: flex-start;
-  }
+.racao {
+  display: flex;
+  flex-direction: column;
+}
 
-  .final .dicas {
-    margin-bottom: 10px;
-  }
+.racao h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
+.racao p {
+  max-width: 90%;
+  align-self: flex-end;
+  font-size: 20px;
+}
 
-  
-  
-  /* Estilos do rodapé */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0;
-  }
+.racao .como-sao {
+  margin-top: 20px;
+}
+
+.racao .racao-link {
+  font-size: 16px;
+  align-self: flex-start;
+}
+
+/* final agradecimentos */
+
+.final .end-paw{
+  align-self: center;
+  max-width: 10%;
+
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.final .dicas {
+  margin-bottom: 10px;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
