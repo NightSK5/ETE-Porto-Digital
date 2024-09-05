@@ -21,14 +21,32 @@ body {
   flex-direction: column;
 }
 
-.navbar {
+.title-and-icon {
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  img {
+    align-self: center;
+  }
 }
 
 .header-content {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.nav-icon {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links {
@@ -64,8 +82,9 @@ section {
   justify-content: center;
   align-items: center;
   margin: 100px;
-  scroll-margin-top: 80px; /* Compensar a altura do cabeçalho fixo */
 }
+
+
 
 .started{
   padding-top: 80px;
@@ -112,6 +131,32 @@ section {
   object-fit: cover;
 
   border-radius: 20px;
+}
+
+.carousel-control-next {
+  background-color: rgba(32, 30, 67, 0.5);
+  border-radius: 40px;
+  margin-right: 20px;
+  height: 100px;
+  width: fit-content;
+  align-self: center;
+}
+
+.carousel-control-prev {
+  background-color: rgba(32, 30, 67, 0.5);
+  border-radius: 40px;
+  margin-left: 20px;
+  height: 100px;
+  width: fit-content;
+  align-self: center;
+}
+
+.carousel-control-next:hover {
+  background-color: rgba(32, 30, 67, 1);
+}
+
+.carousel-control-prev:hover {
+  background-color: rgba(32, 30, 67, 1);
 }
 
 /* estilos dos cuidados */
@@ -193,6 +238,7 @@ section {
 
 .final .dicas {
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 /* Estilos do rodapé */
@@ -205,4 +251,240 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* tela do Tablet */
+
+
+@media screen and (max-width: 768px) {
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+  }
+
+  .title-and-icon {
+    flex-direction: row;
+
+    img {
+      height: 35px;
+      width: 35px;
+      margin-right: 10px;
+    }
+  }
+
+  .nav-icon {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+
+  .nav-links {
+    font-size: 35px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-content{
+    align-self: center;
+  }
+
+  .get-started {
+    width: auto;
+    margin-top: -50px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+  }
+
+  /* off-scren-menu -> NAVBAR */
+  .navbar {
+    background-color: rgba(34, 37, 49, 0.99);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+  }
+
+  .navbar.active {
+      right: 0;
+      width: 300px;
+  }
+
+  .ham-menu-nav {
+    padding: 1rem;
+    display: flex;
+    float: right;
+  }
+
+  .ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: -38px;
+    margin-top: -30px;
+    position: relative;
+  }
+
+  .ham-menu span {
+    height: 5px;
+    width: 80%;
+    background-color: #eeeeee;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+  }
+
+  .ham-menu span:nth-child(1) {
+    top: 25%;  
+  }
+
+  .ham-menu span:nth-child(3) {
+    top: 75%;  
+  }
+
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .ham-menu-nav.active {
+    position: fixed;
+  }
+
+  .carousel {
+
+    img {
+      height: 500%;
+    }
+
+  }
+
+}
+
+
+/* Tela do Celular L */
+
+@media screen and (max-width: 425px) {
+  section{
+      margin:0;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .header-content{
+    align-self: center;
+  }
+
+  .nav-links {
+    font-size: 35px;
+    flex-wrap: wrap;
+  }
+
+  .final .end-paw{
+      margin:0;
+  }
+
+  .started{
+      padding: 0;
+  }
+
+  .carousel img{
+    height: auto;
+  }
+
+  .cuidados {
+    display: flex;
+
+    .title {
+      font-size: 10vw;
+      align-self: center;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .resumos {
+      font-size: 7vw;
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+
+  }
+
+  .racao{
+      h2{
+          font-size: 36px;
+          align-self: center;
+      }
+
+  }
+  .get-started{
+      max-width: 400px;
+      margin-bottom: 5vw;
+      margin-top: 100px;
+  }
+}
+
+/* Tela do Celular até M */
+
+@media screen and (max-width: 375px) {
+
+  .nav-links {
+    font-size: 35px;
+  }
+
+  .carousel-control-next {
+    background-color: rgba(32, 30, 67, 1);
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .carousel-control-prev {
+    background-color: rgba(32, 30, 67, 1);
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+}
+
+@media screen and (max-width:320px) {
+
+  .navbar.active {
+    width: 200px;
+  }
+
 }
